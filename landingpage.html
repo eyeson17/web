@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="nextpage.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="website icon" type="png" href="CCS_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>College of Computing Studies</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1 id="dhvsu-header"><a href="https://dhvsu.edu.ph/">DON HONORIO VENTURA STATE UNIVERSITY</a></h1>
+
+      </div>
+
+      <div id="nav-header">
+        <ul>
+          <li><a href="">Visit</a></li>
+          <li><a href="">Apply</a></li>
+          <li><a href="">Give</a></li>
+
+        </ul>
+      </div>
+
+      <div id="search-container">
+        <form>
+          <input id="search-bar" type="text" placeholder="Search">
+          <div id="search-logo"></div>
+        </form>
+      </div>
+
+      <div id="login-container">
+          <p id="login-text">Profile</p>
+        <div id="profile"></div>
+      </div>
+    </header>
+
+    <main>
+      <div id="css-logo-container">
+        <div>
+          <img class="css-logo" src="CCS_Logo.png" alt="CCS logo">
+        </div>
+       <div>
+          <h1 id="ccs-text">College of Computing Studies</h1>
+       </div>
+      </div>
+    </main>
+
+    <section>
+      <div class="second-header">
+          <ul>
+            <li class="nav-links"><a href="#" onclick="toggleAboutUs(event)">About Us </a> </li>
+
+            <li class="nav-links"><a href="#" onclick="toggleAcademicPrograms(event)">ACADEMIC PROGRAMS</a>
+              <ul class="dropdown">
+                <li><a href="#Associate-in-Computer-Technology">Associate in Computer Technology</a></li>
+                <li><a href="#Computer Science">BS in Computer Science</a></li>
+                <li><a href="#Information-technology">BS in Information Technology</a></li>
+                <li><a href="#Information-system">BS in Information System</a></li>
+              </ul>
+            </li>
+            <li class="nav-links"><a href="">RESEARCH</a>
+              <ul class="dropdown">
+                <li><a href="">Publications</a></li>
+                <li><a href="">Student Research</a></li>
+                <li><a href="">Major Accomplishments</a></li>
+              </ul>
+            </li>
+            <li class="nav-links"><a href="">EXTENSION</a>
+              <ul class="dropdown">
+                <li><a href="">About ESMO</a></li>
+                <li><a href="">On-Going Extension Services</a></li>
+                <li><a href="">Newsletters</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-links"><a href="">Training (RET)</a>
+              <ul class="dropdown">
+                <li><a href="">History</a></li>
+                <li><a href="">Vision and Mission</a></li>
+                <li><a href="">Core Values</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-links"><a href="#" onclick="toggleFaculty(event)">Faculty & Staff</a>
+              <ul class="dropdown">
+                <li><a href="#it-department">I.T Department</a></li>
+                <li><a href="#cs-department">CS, IS & ACT Department</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-links"><a href="" onclick="toggleContact(event)"> Contact Us</a>
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <!--About Us Section display: none-->
+    <section id="team-section" style="display: none;">
+      <div>
+        <h2 class="text-title">Meet Our Team</h2>
+        <div class = "about-container">
+          <div class="about-box">
+            <div class="profile-container">
+              <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="2X2.jpg" class="team-pic" alt = "Jenielyn Ayson picture"></a>
+            </div>
+
+            <div class="name-description">
+             <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><h2>Jenielyn M. Ayson</h2></a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem libero. Phasellus suscipit nisi ac justo feugiat cursus. Mauris efficitur nisl a ex efficitur, in pharetra nibh malesuada. Vivamus.
+              </p>
+
+              <div class="name-title">
+                <h4>Full Stack Developer</h4>
+              </div>
+            </div>
+
+            <div class="acc-logo-container">
+             <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="facebook (1).png" class="acc-logo" alt="Facebook Logo"></a>
+              <a href="mailto:jenielynayson@gmail.com"><img src="social (1).png" class="acc-logo" alt="Gmail Logo"></a>
+              <a href="https://www.instagram.com/_eyesonn/"><img src="instagram.png" class="acc-logo" alt="Instagram Logo"></a>
+            </div>
+          </div>
+
+          <div class="about-box">
+            <div class="profile-container">
+              <a href="https://www.facebook.com/ocampojyl"><img src="jeiyel.jpg" class="team-pic" alt = "Jeiyel Ocampo picture"></a>
+            </div>
+
+            <div class="name-description">
+             <a href="https://www.facebook.com/ocampojyl"><h2>Jeiyel M. Ocampo</h2></a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem libero. Phasellus suscipit nisi ac justo feugiat cursus. Mauris efficitur nisl a ex efficitur, in pharetra nibh malesuada. Vivamus.
+              </p>
+
+              <div class="name-title">
+                <h4>CEO ng kademonyohan</h4>
+              </div>
+            </div>
+            
+
+            <div class="acc-logo-container">
+             <a href="https://www.facebook.com/ocampojyl"><img src="facebook (1).png" class="acc-logo" alt="Facebook Logo"></a>
+              <a href="mailto:jeiyelocampo@gmail.com"><img src="social (1).png" class="acc-logo" alt="Gmail Logo"></a>
+              <a href="https://www.instagram.com/ocampojyl/?hl=en"><img src="instagram.png" class="acc-logo" alt="Instagram Logo"></a>
+            </div>
+          </div>
+
+          <div class="about-box">
+            <div class="profile-container">
+              <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="lexie.jpg" class="team-pic" alt = "Jenielyn Ayson picture"></a>
+            </div>
+
+            <div class="name-description">
+             <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><h2>Jenielyn M. Ayson</h2></a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem libero. Phasellus suscipit nisi ac justo feugiat cursus. Mauris efficitur nisl a ex efficitur, in pharetra nibh malesuada. Vivamus.
+              </p>
+
+              <div class="name-title">
+                <h4>Full Stack Developer</h4>
+              </div>
+            </div>
+            
+
+            <div class="acc-logo-container">
+             <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="facebook (1).png" class="acc-logo" alt="Facebook Logo"></a>
+              <a href="mailto:jenielynayson@gmail.com"><img src="social (1).png" class="acc-logo" alt="Gmail Logo"></a>
+              <a href="https://www.instagram.com/_eyesonn/"><img src="instagram.png" class="acc-logo" alt="Instagram Logo"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "about-container">
+        <div class="about-box">
+          <div class="profile-container">
+            <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="2X2.jpg" class="team-pic" alt = "Jenielyn Ayson picture"></a>
+          </div>
+
+          <div class="name-description">
+           <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><h2>Jenielyn M. Ayson</h2></a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem libero. Phasellus suscipit nisi ac justo feugiat cursus. Mauris efficitur nisl a ex efficitur, in pharetra nibh malesuada. Vivamus.
+            </p>
+
+            <div class="name-title">
+              <h4>Full Stack Developer</h4>
+            </div>
+          </div>
+          
+
+          <div class="acc-logo-container">
+           <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="facebook (1).png" class="acc-logo" alt="Facebook Logo"></a>
+            <a href="mailto:jenielynayson@gmail.com"><img src="social (1).png" class="acc-logo" alt="Gmail Logo"></a>
+            <a href="https://www.instagram.com/_eyesonn/"><img src="instagram.png" class="acc-logo" alt="Instagram Logo"></a>
+          </div>
+        </div>
+
+        <div class="about-box">
+          <div class="profile-container">
+            <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="2X2.jpg" class="team-pic" alt = "Jenielyn Ayson picture"></a>
+          </div>
+
+          <div class="name-description">
+           <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><h2>Jenielyn M. Ayson</h2></a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem libero. Phasellus suscipit nisi ac justo feugiat cursus. Mauris efficitur nisl a ex efficitur, in pharetra nibh malesuada. Vivamus.
+            </p>
+
+            <div class="name-title">
+              <h4>Full Stack Developer</h4>
+            </div>
+          </div>
+          
+
+          <div class="acc-logo-container">
+           <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="facebook (1).png" class="acc-logo" alt="Facebook Logo"></a>
+            <a href="mailto:jenielynayson@gmail.com"><img src="social (1).png" class="acc-logo" alt="Gmail Logo"></a>
+            <a href="https://www.instagram.com/_eyesonn/"><img src="instagram.png" class="acc-logo" alt="Instagram Logo"></a>
+          </div>
+        </div>
+
+        <div class="about-box">
+          <div class="profile-container">
+            <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="2X2.jpg" class="team-pic" alt = "Jenielyn Ayson picture"></a>
+          </div>
+
+          <div class="name-description">
+           <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><h2>Jenielyn M. Ayson</h2></a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu sem libero. Phasellus suscipit nisi ac justo feugiat cursus. Mauris efficitur nisl a ex efficitur, in pharetra nibh malesuada. Vivamus.
+            </p>
+
+            <div class="name-title">
+              <h4>Full Stack Developer</h4>
+            </div>
+          </div>
+          
+
+          <div class="acc-logo-container">
+           <a href="https://www.facebook.com/jenielyn.manalo.ayson/"><img src="facebook (1).png" class="acc-logo" alt="Facebook Logo"></a>
+            <a href="mailto:jenielynayson@gmail.com"><img src="social (1).png" class="acc-logo" alt="Gmail Logo"></a>
+            <a href="https://www.instagram.com/_eyesonn/"><img src="instagram.png" class="acc-logo" alt="Instagram Logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+      <!--Academic Programs-->
+    <section id="academic-programs" style="display: none;">
+      <div>
+        <img src="academic.jpg" id="academic-pic" alt="Students">
+        <h1 class="text-title">Academic Programs</h1>
+        <div class="programs">
+          <h2 class="course">2-Year Diploma Course</h2>
+          <h2 id="Associate-in-Computer-Technology">Associate in Computer Technology (ACT)</h2>
+          <div class="program-container">
+          <p class="program-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie metus lorem, vel tincidunt urna iaculis sit amet. Sed quis maximus elit, eu imperdiet odio. Phasellus congue convallis ipsum, sed placerat nunc cursus sed. Proin eu dapibus nulla. Duis ornare enim in justo convallis blandit. Fusce eget mauris ac erat porta ultricies in congue turpis. Suspendisse potenti. Ut suscipit ac purus vitae euismod. Curabitur ullamcorper nisl non viverra condimentum. Donec vel dictum velit. Fusce sit amet tincidunt est, a interdum dolor. Donec maximus mauris eu luctus semper. Morbi et ullamcorper ligula. Nam ultricies nisi non elit blandit, eu ultrices nisl hendrerit. Nulla facilisi. Aliquam malesuada augue quis dolor viverra malesuada. 
+          </p>
+
+          <p class="program-description">
+            Sed ut molestie lectus. Aliquam eget elit vitae sem viverra facilisis. Vivamus at porttitor diam. Praesent blandit nisi et quam luctus ultricies. Morbi hendrerit molestie condimentum. Pellentesque pretium felis vitae diam luctus rutrum. Curabitur in eros eget eros tempor consequat. Nulla laoreet euismod ex ut convallis. Proin placerat est posuere sem varius condimentum. Cras consequat ornare elementum. Sed eget consequat nibh. Integer sagittis congue dui, ac venenatis velit varius nec. Nam sed ultrices nunc, a facilisis erat. Nulla semper diam pharetra, ornare est a, suscipit urna. Praesent turpis tortor, suscipit nec elementum eu, malesuada a lacus. Pellentesque semper ullamcorper libero, nec ultrices ipsum commodo ac.
+          </p>
+
+          <p class="program-description">
+            Aliquam bibendum augue elit, in eleifend diam luctus at. Nunc maximus nisi orci, sit amet eleifend metus fringilla ac. Vivamus fringilla, odio et hendrerit elementum, urna tellus feugiat magna, cursus rhoncus urna ligula eget risus. Sed vulputate placerat odio a interdum. Donec sit amet consequat turpis, ut imperdiet diam. Praesent venenatis faucibus dui vitae condimentum. Maecenas sodales malesuada mi, quis tincidunt est. Quisque ut leo consequat urna pellentesque accumsan.
+          </p>
+
+          <p class="program-description">
+            Cras lobortis nunc non augue tincidunt bibendum. Aenean viverra vel quam sit amet tristique. Ut ultrices dui non libero convallis finibus. In rhoncus est non justo ultrices semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus consectetur libero vehicula diam imperdiet accumsan. Maecenas et diam nec mauris tempus consequat. Sed pellentesque magna non dui molestie, a ullamcorper nisi vulputate. Donec ullamcorper porttitor dui. Donec suscipit lacinia convallis. Nullam nunc purus, dignissim faucibus finibus sit amet, efficitur sit amet leo. Quisque tristique tincidunt mollis. Maecenas tincidunt tellus ut nulla suscipit auctor. Donec fermentum mi urna, ut venenatis dolor dapibus vel.
+          </p>
+          </div>
+        </div>
+
+        <!-- program 2 -->
+        <div class="programs">
+          <h2 class="course">4-Year Bachelor Degree Course</h2>
+          <h2 id="Computer Science">Bachelor of Science in Computer Science</h2>
+          <div class="program-container">
+          <p class="program-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie metus lorem, vel tincidunt urna iaculis sit amet. Sed quis maximus elit, eu imperdiet odio. Phasellus congue convallis ipsum, sed placerat nunc cursus sed. Proin eu dapibus nulla. Duis ornare enim in justo convallis blandit. Fusce eget mauris ac erat porta ultricies in congue turpis. Suspendisse potenti. Ut suscipit ac purus vitae euismod. Curabitur ullamcorper nisl non viverra condimentum. Donec vel dictum velit. Fusce sit amet tincidunt est, a interdum dolor. Donec maximus mauris eu luctus semper. Morbi et ullamcorper ligula. Nam ultricies nisi non elit blandit, eu ultrices nisl hendrerit. Nulla facilisi. Aliquam malesuada augue quis dolor viverra malesuada. 
+          </p>
+
+          <p class="program-description">
+            Sed ut molestie lectus. Aliquam eget elit vitae sem viverra facilisis. Vivamus at porttitor diam. Praesent blandit nisi et quam luctus ultricies. Morbi hendrerit molestie condimentum. Pellentesque pretium felis vitae diam luctus rutrum. Curabitur in eros eget eros tempor consequat. Nulla laoreet euismod ex ut convallis. Proin placerat est posuere sem varius condimentum. Cras consequat ornare elementum. Sed eget consequat nibh. Integer sagittis congue dui, ac venenatis velit varius nec. Nam sed ultrices nunc, a facilisis erat. Nulla semper diam pharetra, ornare est a, suscipit urna. Praesent turpis tortor, suscipit nec elementum eu, malesuada a lacus. Pellentesque semper ullamcorper libero, nec ultrices ipsum commodo ac.
+          </p>
+
+          <p class="program-description">
+            Aliquam bibendum augue elit, in eleifend diam luctus at. Nunc maximus nisi orci, sit amet eleifend metus fringilla ac. Vivamus fringilla, odio et hendrerit elementum, urna tellus feugiat magna, cursus rhoncus urna ligula eget risus. Sed vulputate placerat odio a interdum. Donec sit amet consequat turpis, ut imperdiet diam. Praesent venenatis faucibus dui vitae condimentum. Maecenas sodales malesuada mi, quis tincidunt est. Quisque ut leo consequat urna pellentesque accumsan.
+          </p>
+
+          <p class="program-description">
+            Cras lobortis nunc non augue tincidunt bibendum. Aenean viverra vel quam sit amet tristique. Ut ultrices dui non libero convallis finibus. In rhoncus est non justo ultrices semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus consectetur libero vehicula diam imperdiet accumsan. Maecenas et diam nec mauris tempus consequat. Sed pellentesque magna non dui molestie, a ullamcorper nisi vulputate. Donec ullamcorper porttitor dui. Donec suscipit lacinia convallis. Nullam nunc purus, dignissim faucibus finibus sit amet, efficitur sit amet leo. Quisque tristique tincidunt mollis. Maecenas tincidunt tellus ut nulla suscipit auctor. Donec fermentum mi urna, ut venenatis dolor dapibus vel.
+          </p>
+          </div>
+        </div>
+
+        <div class="programs">
+          <h2 id="Information-technology">Bachelor of Science in Information Technology</h2>
+          <div class="program-container">
+          <p class="program-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie metus lorem, vel tincidunt urna iaculis sit amet. Sed quis maximus elit, eu imperdiet odio. Phasellus congue convallis ipsum, sed placerat nunc cursus sed. Proin eu dapibus nulla. Duis ornare enim in justo convallis blandit. Fusce eget mauris ac erat porta ultricies in congue turpis. Suspendisse potenti. Ut suscipit ac purus vitae euismod. Curabitur ullamcorper nisl non viverra condimentum. Donec vel dictum velit. Fusce sit amet tincidunt est, a interdum dolor. Donec maximus mauris eu luctus semper. Morbi et ullamcorper ligula. Nam ultricies nisi non elit blandit, eu ultrices nisl hendrerit. Nulla facilisi. Aliquam malesuada augue quis dolor viverra malesuada. 
+          </p>
+
+          <p class="program-description">
+            Sed ut molestie lectus. Aliquam eget elit vitae sem viverra facilisis. Vivamus at porttitor diam. Praesent blandit nisi et quam luctus ultricies. Morbi hendrerit molestie condimentum. Pellentesque pretium felis vitae diam luctus rutrum. Curabitur in eros eget eros tempor consequat. Nulla laoreet euismod ex ut convallis. Proin placerat est posuere sem varius condimentum. Cras consequat ornare elementum. Sed eget consequat nibh. Integer sagittis congue dui, ac venenatis velit varius nec. Nam sed ultrices nunc, a facilisis erat. Nulla semper diam pharetra, ornare est a, suscipit urna. Praesent turpis tortor, suscipit nec elementum eu, malesuada a lacus. Pellentesque semper ullamcorper libero, nec ultrices ipsum commodo ac.
+          </p>
+
+          <p class="program-description">
+            Aliquam bibendum augue elit, in eleifend diam luctus at. Nunc maximus nisi orci, sit amet eleifend metus fringilla ac. Vivamus fringilla, odio et hendrerit elementum, urna tellus feugiat magna, cursus rhoncus urna ligula eget risus. Sed vulputate placerat odio a interdum. Donec sit amet consequat turpis, ut imperdiet diam. Praesent venenatis faucibus dui vitae condimentum. Maecenas sodales malesuada mi, quis tincidunt est. Quisque ut leo consequat urna pellentesque accumsan.
+          </p>
+
+          <p class="program-description">
+            Cras lobortis nunc non augue tincidunt bibendum. Aenean viverra vel quam sit amet tristique. Ut ultrices dui non libero convallis finibus. In rhoncus est non justo ultrices semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus consectetur libero vehicula diam imperdiet accumsan. Maecenas et diam nec mauris tempus consequat. Sed pellentesque magna non dui molestie, a ullamcorper nisi vulputate. Donec ullamcorper porttitor dui. Donec suscipit lacinia convallis. Nullam nunc purus, dignissim faucibus finibus sit amet, efficitur sit amet leo. Quisque tristique tincidunt mollis. Maecenas tincidunt tellus ut nulla suscipit auctor. Donec fermentum mi urna, ut venenatis dolor dapibus vel.
+          </p>
+          </div>
+        </div>
+
+         <div class="programs">
+          <h2 id="Information-system">Bachelor of Science in Information System</h2>
+          <div class="program-container">
+          <p class="program-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie metus lorem, vel tincidunt urna iaculis sit amet. Sed quis maximus elit, eu imperdiet odio. Phasellus congue convallis ipsum, sed placerat nunc cursus sed. Proin eu dapibus nulla. Duis ornare enim in justo convallis blandit. Fusce eget mauris ac erat porta ultricies in congue turpis. Suspendisse potenti. Ut suscipit ac purus vitae euismod. Curabitur ullamcorper nisl non viverra condimentum. Donec vel dictum velit. Fusce sit amet tincidunt est, a interdum dolor. Donec maximus mauris eu luctus semper. Morbi et ullamcorper ligula. Nam ultricies nisi non elit blandit, eu ultrices nisl hendrerit. Nulla facilisi. Aliquam malesuada augue quis dolor viverra malesuada. 
+          </p>
+
+          <p class="program-description">
+            Sed ut molestie lectus. Aliquam eget elit vitae sem viverra facilisis. Vivamus at porttitor diam. Praesent blandit nisi et quam luctus ultricies. Morbi hendrerit molestie condimentum. Pellentesque pretium felis vitae diam luctus rutrum. Curabitur in eros eget eros tempor consequat. Nulla laoreet euismod ex ut convallis. Proin placerat est posuere sem varius condimentum. Cras consequat ornare elementum. Sed eget consequat nibh. Integer sagittis congue dui, ac venenatis velit varius nec. Nam sed ultrices nunc, a facilisis erat. Nulla semper diam pharetra, ornare est a, suscipit urna. Praesent turpis tortor, suscipit nec elementum eu, malesuada a lacus. Pellentesque semper ullamcorper libero, nec ultrices ipsum commodo ac.
+          </p>
+
+          <p class="program-description">
+            Aliquam bibendum augue elit, in eleifend diam luctus at. Nunc maximus nisi orci, sit amet eleifend metus fringilla ac. Vivamus fringilla, odio et hendrerit elementum, urna tellus feugiat magna, cursus rhoncus urna ligula eget risus. Sed vulputate placerat odio a interdum. Donec sit amet consequat turpis, ut imperdiet diam. Praesent venenatis faucibus dui vitae condimentum. Maecenas sodales malesuada mi, quis tincidunt est. Quisque ut leo consequat urna pellentesque accumsan.
+          </p>
+
+          <p class="program-description">
+            Cras lobortis nunc non augue tincidunt bibendum. Aenean viverra vel quam sit amet tristique. Ut ultrices dui non libero convallis finibus. In rhoncus est non justo ultrices semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus consectetur libero vehicula diam imperdiet accumsan. Maecenas et diam nec mauris tempus consequat. Sed pellentesque magna non dui molestie, a ullamcorper nisi vulputate. Donec ullamcorper porttitor dui. Donec suscipit lacinia convallis. Nullam nunc purus, dignissim faucibus finibus sit amet, efficitur sit amet leo. Quisque tristique tincidunt mollis. Maecenas tincidunt tellus ut nulla suscipit auctor. Donec fermentum mi urna, ut venenatis dolor dapibus vel.
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- for faculty and staff -->
+    <section id="faculty-staff" style="display: none;">
+      <div class="faculty-container">
+        <div>
+          <h1>For the Academic Year 2019 - 2024</h1>
+          <div class="dean-box">
+            <img src="user.png" class="dean-pic" alt="Dean Picture">
+          </div>
+          <div class="faculty">
+            <h3>Joel D. Canlas, MIT, MBA</h3>
+            <h3>Dean, College of Computing Studies</h3>
+          </div>
+        </div>
+
+        <div class="faculty-members">
+          <h2>Faculty Members</h2>
+          <h3 id="it-department">Department of Information Technology</h3>
+          <div class="dean-box">
+            <img src="user.png" class="chairperson-pic" alt="Dean Picture">
+          </div>
+          <div class="faculty">
+            <h3>Joel D. Canlas, MIT, MBA</h3>
+            <h3>Chairperson</h3>
+          </div>
+
+          <div class="faculty-box">
+            <div class="faculty-divider">
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Myka A. Cruz, MIT</h4>
+              </div>
+  
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Carl Joseph R. David</h4>
+              </div>
+  
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Edgar B. David</h4>
+              </div>
+  
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Ronnel C. Delos Santos, MIT</h4>
+              </div>
+  
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Marvin C. Luquiaz, MIT</h4>
+              </div>
+            </div>
+
+            <div class="faculty-box">
+              <div class="faculty-divider">
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Christian S. Mallari, MSIT</h4>
+                </div>
+    
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Nikko P. Nicdao</h4>
+                </div>
+    
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Earl Lawrence B. Pelayo</h4>
+                </div>
+    
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Jordan L. Salenga</h4>
+                </div>
+    
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Julieta M. Umali, MIT</h4>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="faculty-members">
+          <h3 id="cs-department">Department of Computer Science and Information System, Associate in Computer Technology</h3>
+          <div class="dean-box">
+            <img src="user.png" class="chairperson-pic" alt="Dean Picture">
+          </div>
+          <div class="faculty">
+            <h3>Joel D. Canlas, MIT, MBA</h3>
+            <h3>Chairperson</h3>
+          </div>
+
+          <div class="faculty-box">
+            <div class="faculty-divider">
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Myka A. Cruz, MIT</h4>
+              </div>
+  
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Carl Joseph R. David</h4>
+              </div>
+  
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Edgar B. David</h4>
+              </div>
+  
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Ronnel C. Delos Santos, MIT</h4>
+              </div>
+  
+              <div class="member-divider">
+                <img src="user.png" class="members-pic" alt="Teacher Picture">
+                <h4>Marvin C. Luquiaz, MIT</h4>
+              </div>
+            </div>
+
+            <div class="faculty-box">
+              <div class="faculty-divider">
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Christian S. Mallari, MSIT</h4>
+                </div>
+    
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Nikko P. Nicdao</h4>
+                </div>
+    
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Earl Lawrence B. Pelayo</h4>
+                </div>
+    
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Jordan L. Salenga</h4>
+                </div>
+    
+                <div class="member-divider">
+                  <img src="user.png" class="members-pic" alt="Teacher Picture">
+                  <h4>Julieta M. Umali, MIT</h4>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="contact-us" style="display: none">
+      <div class="contact-container">
+        <form action = "login.php" method = "post">
+          <div class="form-container">
+            <h3>Contact Us</h3>
+
+            <div class="form-input">
+              <label>Email</label>
+              <input type="email" placeholder="Email" autocomplete="off"id="email" required>
+              <div class="icon email"></div>
+          </div>
+
+          <div class="form-input">
+              <label>Username</label>
+              <input type="text" id="name" placeholder="Name" autocomplete="off" required>
+              <div class="icon username"></div>
+          </div>
+
+          <div class="form-input">
+            <label>Message</label>
+            <textarea rows="8" cols="50" placeholder="Write your message here." ></textarea>
+          </div>
+
+          <div class="button-container">
+            <button type="submit">Submit</button>
+          </div>
+          </div>
+        </form>
+        <div class="ccs-logo-container">
+          <div class="logo-divider">
+            <a href="https://dhvsu.edu.ph/"><img src="dhvsu-logo.png" class="logo" alt="DHVSU Logo"></a>
+            <a href="https://dhvsu.edu.ph/academics-menu/bacolor-campus/college-of-computer-studies"><img src="CCS_Logo.png" class="logo" alt="DHVSU Logo"></a>
+            <a href="https://dhvsu.edu.ph/academics-menu/bacolor-campus/college-of-computer-studies"><img src="ccs-logo-2.png" class="logo" alt="DHVSU Logo"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="hidden">
+      <div id="ccs-background">
+        <div id="ccs-box">
+          <p class="ccs-title">Enabling expertise, shaping tech, boundless possibilities</p>
+          <span>Unleashing the future of technology with insightful education and visionary guidance.</span></div>
+
+          <div id="ccs-button">
+            <button id="learn-button" type="button">Learn More</button>
+            <button id="explore-button" type="button">Explore Admissions</button>
+          </div>
+      </div>
+
+    </section>
+
+    <section class="hidden">
+      <div id="link-container">
+        <div id="logo-container">
+        <a href="" class="container-hover">
+          <div class="logo-caption-container">
+            <img class="logo" src="building.png" alt="Building Logo">
+            <h3 class="logo-caption">Visit CCS</h3>
+          </div>
+        </a>
+
+        <a href="" class="container-hover">
+          <div class="logo-caption-container">
+            <img class="logo" src="fox.png" alt="Fox logo">
+            <h3 class="logo-caption">Become a Fox</h3>
+          </div>
+        </a>
+
+        <a href="" class="container-hover">
+          <div class="logo-caption-container">
+            <img class="logo" src="visit.png" alt="Visit logo">
+            <h3 class="logo-caption">Get Around Campus</h3>
+          </div>
+        </a>
+
+        <a href="" class="container-hover">
+          <div class="logo-caption-container"> 
+            <img class="logo" src="gallery.png" alt="Gallery logo">
+            <h3 class="logo-caption">Galleries</h3>
+          </div>
+        </a>
+
+        <a href="" class="container-hover">
+          <div class="logo-caption-container">
+            <img class="logo" src="university.png" alt="University logo">
+            <h3 class="logo-caption">Campuses</h3>
+          </div>
+        </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="announcement-container" class="hidden">
+      <div id="message-container">
+        <div class="message-divider">
+          <h3 class="caption-title">Message from the Dean</h3>
+          <div>
+            <img id="dean-logo" src="man.png">
+          </div>
+          <div class="dean-container">
+            <h2 class="dean name">Prof. Joel D. Canlas</h2>
+            <h3 class="dean description">CCS Dean</h3>
+          </div>
+          
+
+          <div class="dean-message">
+            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Dignissim diam quis enim lobortis scelerisque fermentum. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. In pellentesque massa placerat duis.
+            </p>
+            <div class="read-more1" ><a href="#">Read More</a> </div>
+          </div>
+          
+        </div>
+
+        <div class="message-divider">
+          <h3 class="caption-title">DHVSU Academic Calendar for S.Y. 2023 - 2024</h3>
+          <div>
+            <img id="calendar-pic" src="calendar.jpg">
+          </div>
+
+          <div class="dean-message">
+            <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non enim praesent elementum. Vitae semper quis lectus nulla at volutpat diam ut. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Platea dictumst quisque sagittis purus sit amet volutpat consequat. In pellentesque massa placerat duis.</p>
+          
+            <div class="read-more2" ><a href="#">Read More</a> </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!--Mission Vision Part-->
+        <div class="vimission-container">
+          <div class="vission">
+            <h3>Vission</h3>
+            <p>
+              DHVSU envisions of becoming one of the lead universities in the ASEAN Region in producing globally competitive professionals who are capable of creating, applying and transferring knowledge and technology for the sustainable development of the humanity and society.
+            </p>
+          </div>
+
+          <div class="vission">
+            <h3>Mission</h3>
+            <p>
+              DHVSU commits itself to provide a conducive environment for the holistic development of students to become globally competitive professionals through quality instruction and services; innovation and research towards the sustainable development of society.
+            </p>
+          </div>
+
+          <div class="vission">
+            <h3>Core Values</h3>
+            <p> • Professionalism (committed, hardworking, dynamic, and socially responsible individuals) </p>
+            <p>• Excellence (transparent, responsive, and accountable community of professionals)</p>
+            <p> • Good Governance (high-level performance, productive, creative, innovative, and globally competitive individuals)</p>
+            </p>
+          </div>
+        </div>
+
+        <hr>
+<!--Announcement Part-->
+      <div id="news-container">
+        <div class="announcement-part">
+          <h3>ANNOUNCEMENTS</h3>
+            <ul>
+              <li><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                <p class="announcement-time">April 15, 2024 13:56:45</p>
+              </li>
+              <li><a href="">Praesent suscipit est auctor est sagittis sollicitudin.</a>
+                <p class="announcement-time">April 14, 2024 05:10:21</p></li>
+              <li><a href="">Vestibulum semper urna eu interdum mollis.</a>
+                <p class="announcement-time">April 14, 2024 08:13:33</p></li>
+              <li><a href="">Curabitur fringilla nibh quis urna interdum, sit amet feugiat massa vulputate.</a>
+                <p class="announcement-time">April 13, 2024 11:16:55</p></li>
+              <li><a href="">Suspendisse rutrum risus non pellentesque venenatis.</a>
+                <p class="announcement-time">April 12, 2024 15:11:17</p></li>
+      
+            </ul>
+        </div>
+
+        <div class="announcement-news">
+          <h3>NEWS</h3>
+          <div class="news-box-container">
+            <div class="news-box">
+              <img class="news-pics" src="announcement-1.jpg" alt="News Picture"> 
+              <div class="news-title">
+              <a href=""><p class="announcement-title">Suspendisse rutrum risus non pellentesque venenatis.</p></a>
+              <p class="news-time">April 14, 2024 05:10:21</p>
+              </div>
+            </div>
+
+            <div class="news-box">
+              <img class="news-pics" src="announcement-1.jpg" alt="News Picture"> 
+              <div class="news-title">
+              <a href=""><p class="announcement-title">Suspendisse rutrum risus non pellentesque venenatis.</p></a>
+              <p class="news-time">April 14, 2024 05:10:21</p>
+              </div>
+            </div>
+
+            <div class="news-box">
+              <img class="news-pics" src="announcement-1.jpg" alt="News Picture"> 
+              <div class="news-title">
+              <a href=""><p class="announcement-title">Suspendisse rutrum risus non pellentesque venenatis.</p></a>
+              <p class="news-time">April 14, 2024 05:10:21</p>
+              </div>
+            </div>
+
+            <div class="news-box">
+              <img class="news-pics" src="announcement-1.jpg" alt="News Picture"> 
+              <div class="news-title">
+              <a href=""><p class="announcement-title">Suspendisse rutrum risus non pellentesque venenatis.</p></a>
+              <p class="news-time">April 14, 2024 05:10:21</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Events-->
+        <div class="announcement-events">
+          <h3>EVENTS</h3>
+            <div class="announcement-container">
+              <div class="announcement-date">
+                <div class="month">MAY</div>
+                <div class="date">05</div>
+              </div>
+              <div class="events-title">
+                <a href=""><p class="announcement-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></a>
+              </div>
+            </div>
+
+            <div class="announcement-container">
+              <div class="announcement-date">
+                <div class="month">APR</div>
+                <div class="date">26</div>
+              </div>
+              <div class="events-title">
+                <a href=""><p class="announcement-title">Suspendisse quis ipsum sit amet tortor porttitor ullamcorper dapibus sit amet magna.</p></a>
+              </div>
+            </div>
+         
+            
+            <div class="announcement-container">
+              <div class="announcement-date">
+                <div class="month">APR</div>
+                <div class="date">17-18</div>
+              </div>
+              <div class="events-title">
+                <a href=""><p class="announcement-title">Donec vitae tortor mollis, rutrum metus sit amet, eleifend nunc.</p></a>
+              </div>
+            </div>
+
+            
+            <div class="announcement-container">
+              <div class="announcement-date">
+                <div class="month">APR</div>
+                <div class="date">10</div>
+              </div>
+              <div class="events-title">
+                <a href=""><p class="announcement-title">Vivamus sit amet mauris porta, accumsan ex a, rutrum purus.</p></a>
+              </div>
+            </div>
+
+            
+            <div class="announcement-container">
+              <div class="announcement-date">
+                <div class="month">APR</div>
+                <div class="date">5</div>
+              </div>
+              <div class="events-title">
+                <a href=""><p class="announcement-title">Suspendisse rutrum risus non pellentesque venenatis.</p></a>
+              </div>
+            </div>
+
+            <div class="announcement-container">
+              <div class="announcement-date">
+                <div class="month">APR</div>
+                <div class="date">1</div>
+              </div>
+              <div class="events-title">
+                <a href=""><p class="announcement-title">Proin quis massa ultrices nulla ornare bibendum vel eget dolor.</p></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-one">
+        <div class="footer-one-container">
+            <div>
+              <h3>CCS</h3>
+              <div>
+                <a href="https://www.facebook.com/search/top?q=dhvsu%20college%20of%20computing%20studies%20student%20council"><img class="footer-logo" src="fb.png" alt="Facebook Logo"></a>
+                <a href="https://dhvsu.edu.ph/academics-menu/bacolor-campus/college-of-computer-studies"><img class="footer-logo" src="google.png" alt="Facebook Logo"></a>
+                <a href=""><img class="footer-logo" src="email (2).png" alt="Facebook Logo"></a>
+              </div>
+            </div>    
+
+            <div class="list-extension">
+              <h3>ABOUT EXTENSION</h3>
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Leadership</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Extension News</a></li>
+                </ul>
+            </div>    
+
+            <div class="list-extension">
+              <h3>CUSTOMER SERVICE</h3>
+                <ul>
+                  <li><a href="">Help Center</a></li>
+                  <li><a href="">Login Problems</a></li>
+                  <li><a href="">Manage Email Preferences</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>    
+
+            <div>
+                <a href=""><img class="school-logo1" src="CCS_Logo.png" alt="Facebook Logo"></a>
+                <a href=""><img class="school-logo2" src="dhvsu-logo.png" alt="Facebook Logo"></a>
+            </div>    
+            
+        </div>
+      </div>
+      <div class="footer-two">
+        <div class="footer-title">
+          <h3>&#169 College of Computing Studies, 2004. All rights reserved.</h3>
+          <h3>Villa de Bacolor, Pampanga Philippines, 2001</h3>
+        </div>
+      </div>
+    </footer>
+
+  <script>
+    function toggleAboutUs(event) {
+    event.preventDefault();
+
+    var showSection = document.getElementById("team-section");
+    var academicPrograms = document.getElementById("academic-programs");
+    var facultyStaff = document.getElementById("faculty-staff");
+    var contactUs = document.getElementById("contact-us");
+    var hideContext = document.getElementsByClassName("hidden");
+
+    if (showSection.style.display === "block" || showSection.style.display === "") {
+        showSection.style.display = "none";
+        for (var i = 0; i < hideContext.length; i++) {
+            hideContext[i].style.display = "block";
+        }
+    } else {
+        showSection.style.display = "block";
+        academicPrograms.style.display = "none";
+        facultyStaff.style.display = "none";
+        contactUs.style.display = "none";
+        for (var i = 0; i < hideContext.length; i++) {
+            hideContext[i].style.display = "none";
+        }
+    }
+}
+
+  function toggleAcademicPrograms(event) {
+    event.preventDefault();
+
+    var showAcademicPrograms = document.getElementById("academic-programs");
+    var hideContentTwo = document.getElementsByClassName("hidden");
+
+    if (showAcademicPrograms.style.display === "block" || showAcademicPrograms.style.display === ""){
+      showAcademicPrograms.style.display = "none";
+      for (var i = 0; i < hideContentTwo.length; i++){
+        hideContentTwo[i].style.display = "block";
+      }
+    } else {
+      showAcademicPrograms.style.display = "block";
+      for (var i = 0; i < hideContentTwo.length; i++){
+        hideContentTwo[i].style.display = "none";
+      }
+    }
+  }
+
+  function toggleFaculty(event){
+    event.preventDefault();
+
+    var showFaculty = document.getElementById("faculty-staff");
+    var hideContent = document.getElementsByClassName("hidden");
+
+    if (showFaculty.style.display === "block" || showFaculty.style.display === "") {
+      showFaculty.style.display = "none";
+      for (var i = 0; i < hideContent.length; i++){
+        hideContent[i].style.display = "block";
+      }
+    } else {
+      showFaculty.style.display = "block";
+      for (var i = 0; i < hideContent.length; i++){
+        hideContent[i].style.display = "none";
+      }
+    }
+  }
+  function toggleContact(event) {
+    event.preventDefault();
+
+    var showContact = document.getElementById("contact-us");
+    var hideContent = document.getElementsByClassName("hidden");
+
+    if (showContact.style.display === "block" || showContact.style.display === "") {
+      showContact.style.display = "none";
+      for (var i = 0; i < hideContent.length; i++){
+        hideContent[i].style.display = "block";
+      }
+    } else {
+      showContact.style.display = "block";
+      for (var i = 0; i < hideContent.length; i++){
+        hideContent[i].style.display = "none";
+      }
+    }
+  }
+
+
+</script>
+
+  </script>
+  
+  </body>
+</html>

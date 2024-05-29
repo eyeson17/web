@@ -1,0 +1,154 @@
+/* about us */
+.text-title{
+  text-align: center;
+  font-size: 55px;
+  padding: 15px;
+}
+.about-container{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.about-box{
+  width: 400px;
+  height: 505px;
+  border: 3px solid var(--link-container);
+  margin: 20px 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profile-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.team-pic{
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--link-container);
+}
+
+.acc-logo-container{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.acc-logo{
+  width: 30px;
+  margin-right: 10px;
+}
+
+.name-description{
+  padding: 10px 20px;
+}
+
+.name-description h2, .name-description h4{
+  text-align: center;
+}
+.name-title{
+  padding: 10px;
+}
+.name-description p{
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+.name-description a{
+  text-decoration: none;
+  color: var(--link-container);
+}
+
+/*for academic programs */
+#academic-pic{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: top;
+}
+#academic-title{
+  font-size: 50px;
+  text-align: center;
+}
+.programs{
+  margin: 20px 30px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.course{
+ color: var(--link-container);
+ font-weight: 900;
+ text-decoration:underline;
+ margin-bottom: 5px;
+}
+
+.program-container{
+  margin: 20px;
+}
+
+.program-description{
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* for faculty and staff */
+.faculty-container{
+  width: 97%;
+  border: 4px solid var(--link-container);
+  height: auto;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+.dean-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dean-pic{
+  width: 250px;
+  display: block;
+}
+
+.faculty{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#it-department, #cs-department{
+  text-align: center;
+  font-size: 25px;
+}
+.chairperson-pic{
+  width: 200px;
+}
+
+.faculty-box{
+  width: 100%;
+  margin: 20px auto;
+}
+.faculty-divider{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.faculty-divider div{
+  text-align: center;
+}
+
+.faculty-members{
+  margin-bottom: 50px;
+}
+.member-divider{
+  width: 200px;
+  height: 230px;
+}
+.members-pic{
+  width: 170px;
+}

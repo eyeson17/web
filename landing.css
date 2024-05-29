@@ -1,0 +1,510 @@
+:root{
+  --header-color: white;
+  --header: #367eb5d6;
+  --second-header: #000000;
+  --nav-links: #44aabf;
+  --link-container: #135785;
+  --month: #8b0909;
+  --footer: #732a37;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  font-family: "Work Sans", sans-serif;
+}
+header, .second-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  background-color: var(--header);
+  font-size: 18px;
+  color: var(--header-color);
+  font-family: "Work Sans", sans-serif;
+}
+
+#dhvsu-header{
+  font-size: 18px;
+  width: 420px;
+  margin-left: 70px;  
+  font-family: "Graduate", sans-serif;
+}
+#dhvsu-header a{
+  text-decoration: none;
+  color: inherit;
+}
+#nav-header{
+  display: flex;
+  width: 250px;
+  
+}
+#nav-header > ul > li{
+  list-style: none;
+  display: inline-block;
+}
+li a{
+  text-decoration: none;
+  margin-right: 25px;
+  color: var(--header-color);
+}
+
+#login-container{
+  width: 120px;
+  display: flex;
+  padding: 3px; 
+  position: relative;
+}
+#login-text, #login-container a{
+  text-decoration: none;
+  color: var(--header-color);
+  cursor: pointer;
+}
+#profile, #search-logo{
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+#search-container{
+  margin-right: 30px;
+  position: relative;
+  width: 300px;
+}
+#search-bar{
+  padding: 4px 15px;
+  width: 270px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+#search-logo{
+  background-image: url(search.png); 
+  background-size: contain;
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  top: 10%;
+  right: -5px;
+  cursor: pointer;
+}
+#profile{
+  width: 50px;
+  height:50px;
+  top: -12px;
+  right: 20px;
+  background-image: url(login-profile.png);
+  background-size: 25px;
+  cursor: pointer;
+}
+/*CSS Logo */
+#css-logo-container{
+  margin: 10px 0 10px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.css-logo{
+  width: 120px;
+}
+#ccs-text{
+  font-size: 35px;
+  margin-left: 3px;
+  font-family: "Graduate", sans-serif; 
+}
+
+/*second header */
+.second-header{
+  background-color: var(--header);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.second-header > ul > li{
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.second-header a{
+  color: var(--header-color);
+  padding: 10px;
+}
+.second-header a:hover{
+  background-color: var(--nav-links);
+  color: var(--second-header);
+  transition: all ease-in-out 0.2s;
+}
+.second-header a:active{
+  background-color: red;
+}
+.dropdown{
+  position: absolute;
+  width: 340px;
+  background-color: var(--header);
+  margin-top: 10px;
+  display: none;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.296);
+  transition: all 0.3s ease;
+}
+
+.dropdown li{
+  color: var(--second-header);
+  list-style: none;
+  padding: 7px 3px;
+  font-size: 16px;
+}
+
+.nav-links:hover .dropdown{
+  display: block;
+}
+
+.dropdown a:hover{
+  color: black;
+}
+
+.dropdown li:hover{
+  transform-origin: left center;
+  transform: scaleX(1.1);
+  font-size: 17px;
+}
+
+
+/* image for ccs */
+#ccs-background{
+  width: 100%;
+  height: 450px;
+  background-image: url(ccs-pic.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#ccs-box, #ccs-button{
+  position: relative;
+  top: 55%;
+  margin-left:40px;
+}
+
+.ccs-title{
+  font-size: 38px;
+  width: 80%;
+  font-family: "Source Serif 4", sans-serif;
+}
+span{
+  font-size: 20px;
+  width: 55%;
+  font-style: italic;
+}
+
+.ccs-title, span{
+  padding: 10px;
+  background-color: var(--header);
+  color: var(--header-color);
+}
+
+/* ccs button (learn more/explore admissions */
+
+#ccs-button{
+  width: 400px;
+  top: 62%;
+}
+
+#learn-button, #explore-button{
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  background-color: var(--link-container);
+  font-weight: bold;
+  color: var(--header-color);
+}
+#learn-button{
+  width: 115px;
+}
+
+#explore-button{
+  width: 190px;
+  margin-left: 10px;
+}
+
+#link-container{
+  width: 100%;
+  height: 150px;
+  background-color: var(--header);
+}
+
+#logo-container{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1% 5%;
+
+}
+.logo{
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.logo-caption{
+  color: var(--header-color);
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.logo-caption-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  height: 120px;
+  padding: 7px 0;
+}
+
+.container-hover{
+  text-decoration: none;
+}
+
+.container-hover:hover .logo-caption-container{
+  background-color: var(--link-container);
+  border-radius: 10px;
+}
+
+/* message from the dean */
+#announcement-container{
+  width: 95%;
+  height: 90%;
+  border: 5px solid var(--link-container);
+  margin: 20px;
+}
+#message-container, .vimission-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.message-divider{
+  width: 600px;
+  height: 500px;
+  border: 3px solid var(--link-container);
+  margin-right: 20px; 
+}
+
+#dean-logo{
+  width: 200px;
+  margin-left: 33%;
+}
+.dean-container{
+  width: 100%;
+  background-color: var(--header);
+  color: var(--header-color);
+  line-height: 1.5;
+}
+.dean{
+  text-align: center;
+}
+.description{
+  font-style: italic;
+}
+.dean-message{
+  width: 98%;
+  padding: 15px;
+  text-align: justify;
+}
+
+.message{
+  font-size: 16px;
+}
+#calendar-pic{
+  width: 300px;
+  height: 260px;
+  object-fit: contain;
+  margin-left: 25%;
+}
+
+.caption-title{
+  padding: 3px 10px;
+}
+
+.read-more1, .read-more2{
+  text-align: right;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.read-more2{
+  margin-top: 10px;
+}
+.read-more1 a, .read-more2 a{
+  text-decoration: none;
+  color: var(--link-container);
+}
+
+.read-more1 a:hover, .read-more2 a:hover{
+  color: var(--month);
+}
+hr{
+  border: 2px solid var(--link-container);
+}
+
+.vission{
+  border: 3px solid var(--link-container);
+  height: 215px;
+  width: 500px;
+  margin-right: 15px;
+  padding: 10px;
+}
+.vission p{
+  margin: 5px 8px;
+  text-align: justify;
+}
+/* announcements */
+#news-container{
+  margin: 10px;
+  display: flex;
+}
+.announcement-part{
+  width: 50%;
+  border-right: 2px solid var(--link-container);
+}
+.announcement-part ul{
+  margin: 3% 5% 3% 10%;
+  line-height: 1.5;
+  width: 88%;
+}
+.announcement-part li{
+  margin-bottom: 5px;
+}
+.announcement-part  a, .news-title a, .events-title a{
+  color: var(--second-header);
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+.announcement-part a:hover, .news-title a:hover, .events-title a:hover{
+  text-decoration:underline;
+  color: var(--month);
+}
+.announcement-time{
+  font-size: 14px;
+}
+
+/* news */
+.announcement-news{
+  width: 60%;
+  margin-left: 1%;
+  border-right: 2px solid var(--link-container);
+}
+.news-box-container{
+  margin: 3%;
+  width: 95%;
+}
+.news-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+}
+.news-pics{
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+.news-time{
+  margin: 6px auto auto 4px;
+  font-size: 14px;
+}
+
+/* events */
+.announcement-events{
+  margin-left: 1%;
+}
+.announcement-container{
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  width: 95%;
+  height: 60px;
+}
+.announcement-date{
+  border: 1px solid black;
+}
+.month, .date{
+  width: 75px;
+  height: 40px;
+}
+.month{
+  background-color: var(--month);
+  height: 20px;
+  color: var(--header-color);
+  font-size: 18px;
+  text-align: center;
+}
+.date{
+  text-align: center;
+  font-size: 27px;
+  font-weight: 900;
+}
+.announcement-title{
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+/* footer */
+
+.footer-one{
+  width: 100%;
+  background-color: var(--header);
+  height: 200px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+} 
+
+.footer-one-container{
+  padding: 30px;
+  display: flex;
+  justify-content:space-between;
+  color: var(--header-color);
+}
+.footer-logo{
+  width: 35px;
+}
+
+.list-extension li{
+  text-decoration: none;
+  list-style: none;
+  margin-top: 5px;
+}
+
+
+.school-logo1{
+  width: 90px;
+}
+
+.school-logo2{
+  width: 85px;
+}
+
+/* footer two */
+.footer-two{
+  width: 100%;
+  height: auto;
+  background-color: var(--footer);
+}
+
+.footer-title{
+  text-align: center;
+  padding-top: 6px;
+  font-size: 12px;
+  color: var(--header-color);
+  line-height: 1.5;
+}
+
