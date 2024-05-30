@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt = $conn->prepare($sql)) {
             $stmt->bind_param("sss", $email, $name, $message);
             $stmt->execute();
-             //javascript-alert-code
-            echo "<script>alert('Data inserted successfully!');</script>";
+             //javascript-alert-code-tas redirect-sa-contact
+             echo "<script>alert('Data inserted successfully!'); window.location.href='http://localhost/project/landingpage/landingpage.html';</script>";
             $stmt->close();
         } else {
             echo "Error: " . $conn->error;
